@@ -75,10 +75,8 @@ public class LostCastle extends Structure {
         //Convert the structure position into blocks and get the structure distance from spawn
         int structurePosX = structurePos.x << 4;
         int structurePosZ = structurePos.z << 4;
-        int distanceFromSpawn = (int) Math.sqrt(Math.pow((structurePosX-spawnPointPos.x), 2) + Math.pow((structurePosZ-spawnPointPos.z), 2));
+        return (int) Math.sqrt(Math.pow((structurePosX-spawnPointPos.x), 2) + Math.pow((structurePosZ-spawnPointPos.z), 2));
 
-        System.out.println("Distance from spawn is: " + distanceFromSpawn);
-        return distanceFromSpawn;
     }
 
     private static boolean extraSpawningChecks(Structure.GenerationContext context) {
