@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.teamremastered.endrem.TheLostCastleFabric"
+            "com.teamremastered.tlc.TheLostCastleFabric"
         ]
     },
     "mixins": [

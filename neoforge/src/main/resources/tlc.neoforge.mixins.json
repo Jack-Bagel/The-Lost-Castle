@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.teamremastered.endrem.mixin",
+  "package": "com.teamremastered.tlc.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [],
