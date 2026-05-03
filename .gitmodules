@@ -1,0 +1,3 @@
+[submodule "submodules/huge-structure-blocks"]
+	path = submodules/huge-structure-blocks
+	url = https://github.com/SamB440/huge-structure-blocks

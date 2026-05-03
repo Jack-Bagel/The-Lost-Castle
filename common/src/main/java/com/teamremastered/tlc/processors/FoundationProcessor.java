@@ -54,12 +54,12 @@ public class FoundationProcessor extends StructureProcessor {
             BlockPos.MutableBlockPos mutable = blockInfoGlobal.pos().mutable().move(Direction.DOWN); // Move down since we already processed the first block
             BlockState currBlockState = levelReader.getBlockState(mutable);
 
-            while (mutable.getY() > levelReader.getMinY()
-                    && mutable.getY() < levelReader.getMaxY()
+            while (mutable.getY() > levelReader.getMinBuildHeight()
+                    && mutable.getY() < levelReader.getMaxBuildHeight()
                     && (currBlockState.isAir() || !levelReader.getFluidState(mutable).isEmpty())) {
 
                 // Place block in vertical pillar
-                levelReader.getChunk(mutable).setBlockState(mutable, RandomBlocks(foundationBlocks));
+                levelReader.getChunk(mutable).setBlockState(mutable, RandomBlocks(foundationBlocks), false);
 
                 // Move down
                 mutable.move(Direction.DOWN);
