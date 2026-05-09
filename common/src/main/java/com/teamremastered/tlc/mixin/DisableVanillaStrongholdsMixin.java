@@ -31,7 +31,6 @@ public class DisableVanillaStrongholdsMixin {
             ChunkAccess chunkAccess,
             ChunkPos chunkPos,
             SectionPos sectionPos,
-            ResourceKey<Level> levelResourceKey,
             CallbackInfoReturnable<Boolean> cir
     ) {
         if (ConfigHandler.DISABLE_VANILLA_STRONGHOLD && structureSetEntry.structure().value().type() == StructureType.STRONGHOLD) {
